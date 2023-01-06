@@ -103,3 +103,32 @@ input[type=number]::-webkit-outer-spin-button {
       transform: rotate(360deg);
     }
   }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content {
+    position: relative;
+    text-align: center;
+    font-size:larger;
+    color: #ffffff;
+    background-color: #303030;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid #E67E22;
+    border-radius: 10px;
+    width: 30%;
+  }
+  #OK{
+    background: #E67E22;
+    color: #ffffff;
+    border-radius: inherit;
+    padding: 2%;
+    width: 40%;
+  }

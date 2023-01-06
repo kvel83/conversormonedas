@@ -130,7 +130,10 @@ const calcMoneyExchange = async() =>{
     const clpAmount = document.querySelector('#clpAmount').value;
     const currencieIndex = document.querySelector('#currencies').selectedIndex;
     if (clpAmount ==='' || currencieIndex === 0){
-        alert('Debe ingresar un monto en pesos para convertirlo al a moneda deseada')
+        // alert('Debe ingresar un monto en pesos para convertirlo al a moneda deseada')
+        const modal = document.querySelector('#myModal');
+        modal.style.display = 'block';
+        modal.querySelector('#OK').addEventListener('click', (event) => modal.style.display = 'none');
     }else{
         const actualCurrencie = document.querySelector('#currencies').selectedOptions[0].value.toLowerCase();
         const currencieSymbol = getSymbolCurrencie(actualCurrencie);
